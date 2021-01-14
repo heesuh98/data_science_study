@@ -1,0 +1,16 @@
+#다차원배열로 벡터의 크기 구하기
+a = np.arange(1,10)
+b = np.arange(11,20)
+a.size ==b.size
+
+from numpy import linalg as LA
+LA.norm(a)
+np.sqrt(np.square(a).sum())
+
+#두 벡터의 내적 구하기
+np.inner(a,b)
+np.dot(a,b)
+a.dot(b)
+
+a@b
+a.__matmul__(b)
